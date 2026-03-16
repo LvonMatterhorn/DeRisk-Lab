@@ -139,15 +139,8 @@
     font-family: var(--font);
   }
 
-  .opt:hover {
-    border-color: rgba(0,0,0,0.2);
-    background: var(--bg-secondary);
-  }
-
-  .opt.selected {
-    border-color: var(--green-light);
-    background: var(--green-pale);
-  }
+  .opt:hover { border-color: rgba(0,0,0,0.2); background: var(--bg-secondary); }
+  .opt.selected { border-color: var(--green-light); background: var(--green-pale); }
 
   .opt-letter {
     width: 24px;
@@ -164,24 +157,11 @@
     transition: background 0.15s, border-color 0.15s, color 0.15s;
   }
 
-  .opt.selected .opt-letter {
-    background: var(--green-mid);
-    border-color: var(--green-mid);
-    color: #fff;
-  }
+  .opt.selected .opt-letter { background: var(--green-mid); border-color: var(--green-mid); color: #fff; }
 
-  .opt-text {
-    font-size: 14px;
-    line-height: 1.55;
-    color: var(--text);
-    padding-top: 2px;
-  }
+  .opt-text { font-size: 14px; line-height: 1.55; color: var(--text); padding-top: 2px; }
 
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+  .nav { display: flex; align-items: center; justify-content: space-between; }
 
   .btn-back {
     font-size: 13px;
@@ -192,7 +172,6 @@
     padding: 10px 0;
     font-family: var(--font);
   }
-
   .btn-back:hover { color: var(--text); }
 
   .btn-next {
@@ -208,7 +187,6 @@
     opacity: 0.35;
     transition: opacity 0.2s;
   }
-
   .btn-next.active { opacity: 1; }
 
   .result { display: none; }
@@ -221,7 +199,6 @@
     margin: 1.5rem 0;
     border: 1px solid;
   }
-
   .risk-block.verde { background: var(--green-pale); border-color: var(--green-border); }
   .risk-block.giallo { background: var(--amber-pale); border-color: var(--amber-border); }
   .risk-block.rosso { background: var(--red-pale); border-color: var(--red-border); }
@@ -233,7 +210,6 @@
     text-transform: uppercase;
     margin-bottom: 0.4rem;
   }
-
   .verde .risk-eyebrow { color: var(--green-mid); }
   .giallo .risk-eyebrow { color: var(--amber); }
   .rosso .risk-eyebrow { color: var(--red); }
@@ -244,25 +220,16 @@
     margin-bottom: 0.35rem;
     font-weight: normal;
   }
-
   .verde .risk-title { color: var(--green-dark); }
   .giallo .risk-title { color: #633806; }
   .rosso .risk-title { color: #791F1F; }
 
-  .risk-pts {
-    font-size: 13px;
-    margin-bottom: 1rem;
-  }
-
+  .risk-pts { font-size: 13px; margin-bottom: 1rem; }
   .verde .risk-pts { color: var(--green-mid); }
   .giallo .risk-pts { color: var(--amber); }
   .rosso .risk-pts { color: var(--red); }
 
-  .risk-body {
-    font-size: 14px;
-    line-height: 1.65;
-  }
-
+  .risk-body { font-size: 14px; line-height: 1.65; }
   .verde .risk-body { color: var(--green-dark); }
   .giallo .risk-body { color: #633806; }
   .rosso .risk-body { color: #791F1F; }
@@ -297,14 +264,10 @@
     overflow: hidden;
     margin-bottom: 5px;
   }
-
   .dim-fill { height: 100%; border-radius: 999px; }
+  .dim-score { font-size: 12px; color: var(--text-muted); }
 
-  .dim-score {
-    font-size: 12px;
-    color: var(--text-muted);
-  }
-
+  /* Email block */
   .email-block {
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 12px;
@@ -312,18 +275,8 @@
     background: var(--bg-secondary);
     margin-top: 1.5rem;
   }
-
-  .email-block p {
-    font-size: 13px;
-    color: var(--text-muted);
-    margin-bottom: 1rem;
-    line-height: 1.55;
-  }
-
-  .email-row {
-    display: flex;
-    gap: 8px;
-  }
+  .email-block p { font-size: 13px; color: var(--text-muted); margin-bottom: 1rem; line-height: 1.55; }
+  .email-row { display: flex; gap: 8px; }
 
   .email-input {
     flex: 1;
@@ -337,7 +290,6 @@
     outline: none;
     -webkit-appearance: none;
   }
-
   .email-input:focus { border-color: var(--green-light); }
 
   .email-send {
@@ -352,24 +304,14 @@
     cursor: pointer;
     white-space: nowrap;
   }
+  .email-send:disabled { opacity: 0.6; cursor: default; }
 
-  .email-ok {
-    font-size: 13px;
-    color: var(--green-mid);
-    margin-top: 0.5rem;
-    display: none;
-  }
+  .email-ok { font-size: 13px; color: var(--green-mid); margin-top: 0.5rem; display: none; }
+  .email-err { font-size: 13px; color: var(--red); margin-top: 0.5rem; display: none; }
 
+  /* CTA */
   .cta-section { margin-top: 1.75rem; }
-
-  .cta-title {
-    font-family: var(--font-serif);
-    font-size: 19px;
-    margin-bottom: 1rem;
-    color: var(--text);
-    font-weight: normal;
-  }
-
+  .cta-title { font-family: var(--font-serif); font-size: 19px; margin-bottom: 1rem; color: var(--text); font-weight: normal; }
   .cta-stack { display: flex; flex-direction: column; gap: 10px; }
 
   .cta-primary {
@@ -396,10 +338,8 @@
     border-radius: 8px;
     font-family: var(--font);
     font-size: 14px;
-    cursor: pointer;
     text-align: center;
     text-decoration: none;
-    color: var(--text);
   }
 
   .restart {
@@ -430,18 +370,13 @@
   <div class="quiz-wrap" id="quizWrap">
     <div class="brand">DeRisk Lab</div>
     <div class="brand-sub">Risk Assessment</div>
-
     <div class="progress-row">
-      <div class="progress-track">
-        <div class="progress-fill" id="progressFill" style="width:8.33%"></div>
-      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:8.33%"></div></div>
       <div class="progress-count" id="progressCount">1 di 12</div>
     </div>
-
     <div class="section-pill" id="sectionPill"></div>
     <div class="question" id="questionText"></div>
     <div class="options" id="optionsList"></div>
-
     <div class="nav">
       <button class="btn-back" id="btnBack" onclick="goBack()">← Indietro</button>
       <button class="btn-next" id="btnNext" onclick="goNext()">Avanti</button>
@@ -462,18 +397,19 @@
     <div class="dim-grid" id="dimGrid"></div>
 
     <div class="email-block">
-      <p>Vuoi ricevere il report completo con raccomandazioni dettagliate per ogni dimensione?</p>
+      <p>Inserisci la tua email per ricevere il report completo con raccomandazioni dettagliate per ogni dimensione.</p>
       <div class="email-row">
         <input class="email-input" type="email" id="emailInput" placeholder="La tua email aziendale" />
-        <button class="email-send" onclick="sendReport()">Invia report</button>
+        <button class="email-send" id="emailSendBtn" onclick="sendReport()">Invia report</button>
       </div>
       <div class="email-ok" id="emailOk">Report in arrivo. Controlla la tua casella.</div>
+      <div class="email-err" id="emailErr">Qualcosa non ha funzionato. Riprova o scrivici direttamente.</div>
     </div>
 
     <div class="cta-section">
       <div class="cta-title" id="ctaTitle"></div>
       <div class="cta-stack">
-        <button class="cta-primary" id="ctaPrimary"></button>
+        <a class="cta-primary" id="ctaPrimary" href="#" target="_blank"></a>
         <a class="cta-secondary" href="https://derisklab.carrd.co/" target="_blank">Scopri come funziona il percorso</a>
       </div>
       <button class="restart" onclick="restart()">Ricomincia il test</button>
@@ -483,6 +419,15 @@
 </div>
 
 <script>
+// ─── CONFIGURAZIONE ────────────────────────────────────────────────
+var BREVO_API_KEY = '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';
+var FROM_EMAIL    = 'francescoboselli094@gmail.com';
+var FROM_NAME     = 'Francesco - DeRisk Lab';
+var EMAIL_SUBJECT = 'Il tuo report di rischio — DeRisk Lab';
+var CALENDLY_URL  = 'https://calendly.com/francescoboselli094/15min';
+var SITO_URL      = 'https://derisklab.carrd.co/';
+// ──────────────────────────────────────────────────────────────────
+
 var questions = [
   { section: "Validazione del problema", text: "Come è nata l'idea?", options: [
     { label: "Da un'intuizione o da un'idea venuta a tavolino", pts: 0 },
@@ -546,22 +491,23 @@ var questions = [
   ]}
 ];
 
-var sections = ["Validazione del problema","Segnali di mercato reali","Conoscenza del mercato","Chiarezza sulla soluzione","Execution readiness","Consapevolezza tecnica"];
+var sections   = ["Validazione del problema","Segnali di mercato reali","Conoscenza del mercato","Chiarezza sulla soluzione","Execution readiness","Consapevolezza tecnica"];
 var sectionIdx = {"Validazione del problema":[0,1],"Segnali di mercato reali":[2,3],"Conoscenza del mercato":[4,5],"Chiarezza sulla soluzione":[6,7],"Execution readiness":[8,9],"Consapevolezza tecnica":[10,11]};
-var dimColors = ["#3B6D11","#BA7517","#185FA5","#3B6D11","#993C1D","#533AB7"];
+var dimColors  = ["#3B6D11","#BA7517","#185FA5","#3B6D11","#993C1D","#533AB7"];
 
 var cur = 0;
 var answers = [null,null,null,null,null,null,null,null,null,null,null,null];
+var resultData = {};
 
 function render() {
   var q = questions[cur];
-  document.getElementById('sectionPill').textContent = q.section;
-  document.getElementById('questionText').textContent = q.text;
+  document.getElementById('sectionPill').textContent   = q.section;
+  document.getElementById('questionText').textContent  = q.text;
   document.getElementById('progressCount').textContent = (cur+1) + ' di 12';
-  document.getElementById('progressFill').style.width = (Math.round((cur+1)/12*100)) + '%';
-  document.getElementById('btnBack').style.visibility = cur === 0 ? 'hidden' : 'visible';
-  document.getElementById('btnNext').textContent = cur === 11 ? 'Vedi risultato' : 'Avanti';
-  document.getElementById('btnNext').className = 'btn-next' + (answers[cur] !== null ? ' active' : '');
+  document.getElementById('progressFill').style.width  = Math.round((cur+1)/12*100) + '%';
+  document.getElementById('btnBack').style.visibility  = cur === 0 ? 'hidden' : 'visible';
+  document.getElementById('btnNext').textContent       = cur === 11 ? 'Vedi risultato' : 'Avanti';
+  document.getElementById('btnNext').className         = 'btn-next' + (answers[cur] !== null ? ' active' : '');
 
   var list = document.getElementById('optionsList');
   list.innerHTML = '';
@@ -570,7 +516,7 @@ function render() {
     (function(idx) {
       var btn = document.createElement('button');
       btn.className = 'opt' + (answers[cur] === idx ? ' selected' : '');
-      btn.innerHTML = '<div class="opt-letter">' + letters[idx] + '</div><div class="opt-text">' + q.options[idx].label + '</div>';
+      btn.innerHTML = '<div class="opt-letter">' + letters[idx] + '</div><div class="opt-text">' + questions[cur].options[idx].label + '</div>';
       btn.onclick = function() { pick(idx); };
       list.appendChild(btn);
     })(i);
@@ -591,8 +537,21 @@ function goNext() {
   if (cur < 11) { cur++; render(); } else showResult();
 }
 
-function goBack() {
-  if (cur > 0) { cur--; render(); }
+function goBack() { if (cur > 0) { cur--; render(); } }
+
+function buildDimScores() {
+  var scores = {};
+  for (var s = 0; s < sections.length; s++) {
+    var sec = sections[s];
+    var idxs = sectionIdx[sec];
+    var pts = 0;
+    for (var j = 0; j < idxs.length; j++) {
+      var ai = answers[idxs[j]];
+      if (ai !== null) pts += questions[idxs[j]].options[ai].pts;
+    }
+    scores[sec] = pts;
+  }
+  return scores;
 }
 
 function showResult() {
@@ -610,63 +569,145 @@ function showResult() {
     body = 'Hai fatto molto lavoro prima di arrivare qui. Il percorso di validazione ti serve per blindare le ultime incertezze prima di investire: non per ricominciare da capo, ma per arrivare allo sviluppo con un brief a prova di software house.';
     ctaTitle = 'Pronto per il passo successivo?';
     ctaLabel = 'Scarica la guida alla validazione';
-    ctaHref = 'https://derisklab.carrd.co/';
+    ctaHref  = SITO_URL;
   } else if (total >= 13) {
     cls = 'giallo'; eyebrow = 'Rischio elevato'; title = 'Intuizioni valide, lacune concrete';
     body = 'Hai le idee giuste ma alcune aree critiche non sono ancora presidiate. Procedere adesso significa bruciare budget su ipotesi non verificate. Tre o quattro settimane di validazione strutturata possono cambiare radicalmente le probabilità di successo.';
     ctaTitle = 'Come ridurre il rischio prima di investire?';
     ctaLabel = 'Prenota una sessione gratuita';
-    ctaHref = 'https://derisklab.carrd.co/';
+    ctaHref  = CALENDLY_URL;
   } else {
     cls = 'rosso'; eyebrow = 'Rischio critico'; title = 'Validazione necessaria';
     body = "L'idea ha potenziale, ma ogni euro speso adesso è un euro a rischio. Non perché l'idea sia sbagliata, ma perché non hai ancora gli elementi per saperlo. Il percorso di validazione esiste esattamente per questa situazione.";
     ctaTitle = 'Partiamo dalla validazione?';
     ctaLabel = 'Prenota una sessione gratuita';
-    ctaHref = 'https://derisklab.carrd.co/';
+    ctaHref  = CALENDLY_URL;
   }
 
-  document.getElementById('riskBlock').className = 'risk-block ' + cls;
-  document.getElementById('riskEyebrow').textContent = eyebrow;
-  document.getElementById('riskTitle').textContent = title;
-  document.getElementById('riskPts').textContent = 'Punteggio: ' + total + ' su 24';
-  document.getElementById('riskBody').textContent = body;
-  document.getElementById('ctaTitle').textContent = ctaTitle;
-  var prim = document.getElementById('ctaPrimary');
-  prim.textContent = ctaLabel;
-  prim.onclick = function() { window.open(ctaHref, '_blank'); };
+  resultData = { total: total, level: eyebrow, title: title, body: body, dimScores: buildDimScores() };
+
+  document.getElementById('riskBlock').className      = 'risk-block ' + cls;
+  document.getElementById('riskEyebrow').textContent  = eyebrow;
+  document.getElementById('riskTitle').textContent    = title;
+  document.getElementById('riskPts').textContent      = 'Punteggio: ' + total + ' su 24';
+  document.getElementById('riskBody').textContent     = body;
+  document.getElementById('ctaTitle').textContent     = ctaTitle;
+  document.getElementById('ctaPrimary').textContent   = ctaLabel;
+  document.getElementById('ctaPrimary').href          = ctaHref;
 
   var grid = document.getElementById('dimGrid');
   grid.innerHTML = '';
   for (var s = 0; s < sections.length; s++) {
     var sec = sections[s];
-    var idxs = sectionIdx[sec];
-    var pts = 0;
-    for (var j = 0; j < idxs.length; j++) {
-      var ai = answers[idxs[j]];
-      if (ai !== null) pts += questions[idxs[j]].options[ai].pts;
-    }
+    var pts = resultData.dimScores[sec];
     var pct = Math.round(pts / 4 * 100);
     var d = document.createElement('div');
     d.className = 'dim-card';
-    d.innerHTML = '<div class="dim-name">' + sec + '</div><div class="dim-track"><div class="dim-fill" style="width:' + pct + '%;background:' + dimColors[s] + '"></div></div><div class="dim-score">' + pts + '/4</div>';
+    d.innerHTML = '<div class="dim-name">' + sec + '</div>'
+      + '<div class="dim-track"><div class="dim-fill" style="width:' + pct + '%;background:' + dimColors[s] + '"></div></div>'
+      + '<div class="dim-score">' + pts + '/4</div>';
     grid.appendChild(d);
   }
 }
 
+function buildEmailHTML(email) {
+  var d = resultData;
+  var dimRows = '';
+  for (var s = 0; s < sections.length; s++) {
+    var sec = sections[s];
+    var pts = d.dimScores[sec];
+    var pct = Math.round(pts / 4 * 100);
+    var barColor = dimColors[s];
+    dimRows += '<tr>'
+      + '<td style="padding:8px 0;font-size:13px;color:#5a5a5a;width:55%">' + sec + '</td>'
+      + '<td style="padding:8px 0;width:35%">'
+      + '<div style="background:#e8e8e8;border-radius:4px;height:6px;overflow:hidden">'
+      + '<div style="background:' + barColor + ';width:' + pct + '%;height:100%;border-radius:4px"></div>'
+      + '</div></td>'
+      + '<td style="padding:8px 0;font-size:13px;color:#5a5a5a;text-align:right;width:10%">' + pts + '/4</td>'
+      + '</tr>';
+  }
+
+  var levelColor = d.total >= 20 ? '#3B6D11' : (d.total >= 13 ? '#BA7517' : '#A32D2D');
+  var levelBg    = d.total >= 20 ? '#EAF3DE' : (d.total >= 13 ? '#FAEEDA' : '#FCEBEB');
+  var ctaLabel   = d.total >= 20 ? 'Scarica la guida alla validazione' : 'Prenota una sessione gratuita';
+  var ctaHref    = d.total >= 20 ? SITO_URL : CALENDLY_URL;
+
+  return '<!DOCTYPE html><html lang="it"><head><meta charset="UTF-8"></head><body style="margin:0;padding:0;background:#f5f5f2;font-family:-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif">'
+    + '<table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f5f2;padding:32px 16px">'
+    + '<tr><td align="center">'
+    + '<table width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:#ffffff;border-radius:12px;border:1px solid rgba(0,0,0,0.08);padding:32px">'
+    + '<tr><td>'
+    + '<p style="font-size:20px;color:#2D5A1B;margin:0 0 4px;font-family:Georgia,serif">DeRisk Lab</p>'
+    + '<p style="font-size:11px;color:#5a5a5a;text-transform:uppercase;letter-spacing:0.06em;margin:0 0 28px">Il tuo report di rischio</p>'
+    + '<div style="background:' + levelBg + ';border:1px solid ' + levelColor + ';border-radius:10px;padding:20px;margin-bottom:24px">'
+    + '<p style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:' + levelColor + ';margin:0 0 6px">' + d.level + '</p>'
+    + '<p style="font-size:22px;color:' + levelColor + ';margin:0 0 4px;font-family:Georgia,serif">' + d.title + '</p>'
+    + '<p style="font-size:13px;color:' + levelColor + ';margin:0 0 12px">Punteggio: ' + d.total + ' su 24</p>'
+    + '<p style="font-size:14px;color:' + levelColor + ';line-height:1.65;margin:0">' + d.body + '</p>'
+    + '</div>'
+    + '<p style="font-size:12px;text-transform:uppercase;letter-spacing:0.06em;color:#5a5a5a;margin:0 0 12px">Dettaglio per dimensione</p>'
+    + '<table width="100%" cellpadding="0" cellspacing="0">' + dimRows + '</table>'
+    + '<div style="margin:28px 0 0">'
+    + '<a href="' + ctaHref + '" style="display:block;text-align:center;padding:13px 20px;background:#2D5A1B;color:#ffffff;border-radius:8px;text-decoration:none;font-size:14px;font-weight:500">' + ctaLabel + '</a>'
+    + '</div>'
+    + '<p style="font-size:12px;color:#5a5a5a;margin:20px 0 0;line-height:1.6">Francesco Boselli - DeRisk Lab<br>'
+    + '<a href="' + SITO_URL + '" style="color:#3B6D11">' + SITO_URL + '</a></p>'
+    + '</td></tr></table>'
+    + '</td></tr></table>'
+    + '</body></html>';
+}
+
 function sendReport() {
-  var v = document.getElementById('emailInput').value;
-  if (!v || v.indexOf('@') === -1) {
+  var email = document.getElementById('emailInput').value.trim();
+  if (!email || email.indexOf('@') === -1) {
     document.getElementById('emailInput').style.borderColor = '#E24B4A';
     return;
   }
   document.getElementById('emailInput').style.borderColor = '';
-  document.getElementById('emailOk').style.display = 'block';
+  document.getElementById('emailOk').style.display  = 'none';
+  document.getElementById('emailErr').style.display = 'none';
+
+  var btn = document.getElementById('emailSendBtn');
+  btn.disabled = true;
+  btn.textContent = 'Invio in corso...';
+
+  var payload = {
+    sender: { name: FROM_NAME, email: FROM_EMAIL },
+    to: [{ email: email }],
+    subject: EMAIL_SUBJECT,
+    htmlContent: buildEmailHTML(email)
+  };
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://api.brevo.com/v3/smtp/email', true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.setRequestHeader('api-key', BREVO_API_KEY);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState !== 4) return;
+    btn.disabled = false;
+    btn.textContent = 'Invia report';
+    if (xhr.status >= 200 && xhr.status < 300) {
+      document.getElementById('emailOk').style.display = 'block';
+      document.getElementById('emailSendBtn').style.display = 'none';
+      document.getElementById('emailInput').disabled = true;
+    } else {
+      document.getElementById('emailErr').style.display = 'block';
+    }
+  };
+  xhr.send(JSON.stringify(payload));
 }
 
 function restart() {
   cur = 0;
   answers = [null,null,null,null,null,null,null,null,null,null,null,null];
-  document.getElementById('quizWrap').className = 'quiz-wrap';
+  resultData = {};
+  document.getElementById('emailInput').value    = '';
+  document.getElementById('emailInput').disabled = false;
+  document.getElementById('emailSendBtn').style.display = 'inline-block';
+  document.getElementById('emailOk').style.display  = 'none';
+  document.getElementById('emailErr').style.display = 'none';
+  document.getElementById('quizWrap').className  = 'quiz-wrap';
   document.getElementById('resultWrap').className = 'result';
   render();
 }
